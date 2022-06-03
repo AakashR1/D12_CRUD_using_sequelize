@@ -37,5 +37,12 @@ module.exports = (sequelize, DataTypes)=>{
             allowNull:false
         }
     });
+
+    // Employee.associate =(models) =>{
+    //     Employee.belognsTo(models.Department,{
+    //         foreignKey:{}
+    //     })
+    // }
+
     return Employee;
 };

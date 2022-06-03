@@ -11,7 +11,13 @@ module.exports = (sequelize, DataTypes)=>{
             type:DataTypes.STRING,
             allowNull:false,
             unique: true 
-        },
+        }
     });
+    // Department.associate =(models) =>{
+    //     Department.hasMany(models.Employee,{
+    //         onDelete:"cascade"
+    //     });
+    // }
+
     return Department;
 };
